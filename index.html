@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inlämning Modul 1 JS</title>
+  </head>
+  <body>
+    <h1>Inlämning Modul 1 JS</h1>
+    <h3>Teddie Liljekvist</h3>
+
+    <script>
+      //Uppgift 1
+      var someAge = 42;
+      let someName = 'Xavier';
+      const someCountry = 'Australia';
+
+      //Uppgift 2
+      let winVar = true;
+      let pointsVar = 85;
+      let teamVar = 'Sverige';
+      let teamManager = {
+        name: 'Björn Ranelid',
+        age: 71,
+        gender: 'Male',
+      };
+      let teamMembers = ['Agnes Ranelid', 'August Ranelid'];
+
+      //Uppgift 3
+      function myFunc(a, b) {
+        return a + b;
+      }
+      let sum = myFunc(8, 20);
+      function myFunc2(x, y) {
+        console.log(x + y);
+      }
+      myFunc2('Summan blir: ', sum);
+
+      //Uppgift 4
+      let currentTime = Date();
+      console.log(currentTime);
+
+      //Uppgift 5
+      let family = {
+        mother: 'Karen',
+        father: 'Donald',
+        daughter: 'Ivanka',
+        showAll: function () {
+          console.log(this.mother + ' ' + this.father + ' ' + this.daughter);
+        },
+      };
+      family.showAll();
+
+      //Uppgift 6
+      let someNumbers = [4, 8, 15, 16, 23, 42];
+      console.log(someNumbers[5]);
+
+      let someNewNumbers = someNumbers.filter((n) => n < 20);
+      console.log(someNewNumbers);
+
+      let mapNewNumbers = someNewNumbers.map((x) => x * 2);
+      console.log(mapNewNumbers);
+
+      mapNewNumbers.forEach((element) => console.log(element));
+
+      //Uppgift 7
+      let i = 0;
+      while (i < 6) {
+        i++;
+        if (i <= 3) {
+          console.log('Loop ' + i);
+        } else if (i <= 6) {
+          console.log('Almost done...');
+        }
+      }
+      console.log('Done!');
+    </script>
+  </body>
+</html>
